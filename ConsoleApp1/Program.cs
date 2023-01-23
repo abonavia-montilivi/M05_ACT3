@@ -87,7 +87,43 @@
 
 
     //Jaume
+    public static void Cinema()
+    {
+        try
+        {
+            char option;
 
+            Console.WriteLine("Question....." +
+                "\n)Option 1 " +
+                "\nb) Option 2 " +
+                "\nc) Option 3 " +
+                "\nd) Option4");
+
+            option = Convert.ToChar(Console.ReadLine());
+
+
+
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            MsgNextScreen("Press any key to return to the menu...");
+        }
+    }
+
+    public static void History()
+    {
+
+    }
+
+    public static void Geography()
+    {
+
+    }
 
 
 
