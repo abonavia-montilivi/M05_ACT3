@@ -15,38 +15,38 @@
                 case ConsoleKey.NumPad1:
                     MusicCuriosities();
                     break;
-                case ConsoleKey.D2:
-                case ConsoleKey.NumPad2:
-                    DadJokes();
-                    break;
-                case ConsoleKey.D3:
-                case ConsoleKey.NumPad3:
-                    Science();
-                    break;
-                case ConsoleKey.D4:
-                case ConsoleKey.NumPad4:
-                    DrivingSchool();
-                    break;
-                case ConsoleKey.D5:
-                case ConsoleKey.NumPad5:
-                    Riddles();
-                    break;
-                case ConsoleKey.D6:
-                case ConsoleKey.NumPad6:
-                    Astronomy();
-                    break;
-                case ConsoleKey.D7:
-                case ConsoleKey.NumPad7:
-                    History();
-                    break;
-                case ConsoleKey.D8:
-                case ConsoleKey.NumPad8:
-                    Cinema();
-                    break;
-                case ConsoleKey.D9:
-                case ConsoleKey.NumPad9:
-                    Geography();
-                    break;
+                //case ConsoleKey.D2:
+                //case ConsoleKey.NumPad2:
+                //    DadJokes();
+                //    break;
+                //case ConsoleKey.D3:
+                //case ConsoleKey.NumPad3:
+                //    Science();
+                //    break;
+                //case ConsoleKey.D4:
+                //case ConsoleKey.NumPad4:
+                //    DrivingSchool();
+                //    break;
+                //case ConsoleKey.D5:
+                //case ConsoleKey.NumPad5:
+                //    Riddles();
+                //    break;
+                //case ConsoleKey.D6:
+                //case ConsoleKey.NumPad6:
+                //    Astronomy();
+                //    break;
+                //case ConsoleKey.D7:
+                //case ConsoleKey.NumPad7:
+                //    History();
+                //    break;
+                //case ConsoleKey.D8:
+                //case ConsoleKey.NumPad8:
+                //    Cinema();
+                //    break;
+                //case ConsoleKey.D9:
+                //case ConsoleKey.NumPad9:
+                //    Geography();
+                //    break;
                  case ConsoleKey.D0:
                 case ConsoleKey.NumPad0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
@@ -78,8 +78,83 @@
         Console.ReadKey();
     }
     //Arnau
+    public static int ValidAnswer()
+    {
+        int answer = 0;
+        try
+        {
+            bool valid = false;
+            Console.Write("\t Answer: ");
+            //Console.Write("\t");
+            while (!valid)
+            {
 
+                ConsoleKeyInfo tecla;
+                tecla = Console.ReadKey();
+                switch (tecla.Key)
+                {
+                    case ConsoleKey.A:
+                        answer = 1;
+                        Console.WriteLine();
+                        Console.WriteLine("A");
+                        valid = true;
+                        break;
+                    case ConsoleKey.B:
+                        Console.WriteLine();
+                        Console.WriteLine("B");
+                        answer = 2;
+                        valid = true;
+                        break;
+                    case ConsoleKey.C:
+                        Console.WriteLine();
+                        Console.WriteLine("C");
+                        answer = 3;
+                        valid=true;
+                        break;
+                    case ConsoleKey.D:
+                        Console.WriteLine();
+                        Console.WriteLine("D");
+                        answer = 4;
+                        valid = true;
+                        break;
+                    default:
+                        answer = 0;
+                        break;
 
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        return answer;
+    }
+    public static void MusicCuriosities()
+    {
+        try
+        {
+            Console.WriteLine("Why does Fall out Boy have it's name?");
+            Console.WriteLine("A - A RANDOM GUY IN THE CROWD SHOUDED THE NAME");
+            Console.WriteLine("B - THEY ARE ALL FANS FROM THE SIMPSONS");
+            Console.WriteLine("C - IS THE VILLAN FROM A COMIC BOOK SERIES");
+            Console.WriteLine("D - THEY CHECKED DIFFERENT COMBINATIONS OF NAMES");
+            if (ValidAnswer() == 1)
+                Console.WriteLine("YEP");
+            else
+                Console.WriteLine("NOPE");
+            //Console.Clear(); Clean screen between questions
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
 
     //Eloy
 
