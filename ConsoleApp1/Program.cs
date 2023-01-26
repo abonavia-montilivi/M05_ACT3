@@ -89,87 +89,74 @@
     //Jaume
     public static void History()
     {
-        try
+        char rightAnswer = 'a';
+        int punctuation = 0;
+
+        Console.Write("Question....." +
+        "\na) Option 1 " +
+        "\nb) Option 2 " +
+        "\nc) Option 3 " +
+        "\nd) Option4" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"{CorrectOrNot(rightAnswer,punctuation)}"); 
+
+        NextQuestion();
+
+        MsgNextScreen("Press any key to return to the menu...");
+        
+    }
+    public static string CorrectOrNot(char rightAnswer, int punctuation)
+    {
+        char option=RightFormatOption();
+
+        if (option == rightAnswer)
         {
-            char option;
-            int punctuation=0;
-
-            Console.WriteLine("Question....." +
-            "\na) Option 1 " +
-            "\nb) Option 2 " +
-            "\nc) Option 3 " +
-            "\nd) Option4");
-
-            Console.Write("\nYour answer → ");
-            option = Convert.ToChar(Console.ReadLine());
-
-            if(option == 'a')
-            {
-                Console.WriteLine("\nRight answer");
-                punctuation++;
-            }
-            else
-            {
-                Console.WriteLine("\nWrong answer");
-            }
-
-            Console.WriteLine("\nPress any key for the next question!");
-            Console.ReadKey();
-            Console.Clear();
-
-            Console.WriteLine("\n2) Question....." +
-            "\na) Option 1 " +
-            "\nb) Option 2 " +
-            "\nc) Option 3 " +
-            "\nd) Option4");
-
-            Console.Write("\nYour answer → ");
-            option = Convert.ToChar(Console.ReadLine());
-
-            if (option == 'a')
-            {
-                Console.WriteLine("\nRight answer");
-                punctuation++;
-            }
-            else
-            {
-                Console.WriteLine("\nWrong answer");
-            }
-
-            Console.WriteLine("\nPress any key for the next question!");
-            Console.ReadKey();
-            Console.Clear();
-
-            Console.WriteLine("\n3) Question....." +
-            "\na) Option 1 " +
-            "\nb) Option 2 " +
-            "\nc) Option 3 " +
-            "\nd) Option4");
-
-            Console.Write("\nYour answer → ");
-            option = Convert.ToChar(Console.ReadLine());
-
-            if (option == 'a')
-            {
-                Console.WriteLine("\nRight answer");
-                punctuation++;
-            }
-            else
-            {
-                Console.WriteLine("\nWrong answer");
-            }
-
-            Console.WriteLine($"\nPunctuation → {punctuation}");
-
+            punctuation++;
+            return ($"\nRight answer! - Punctuation: {punctuation}");
         }
-        catch (Exception e)
+        else
         {
-            Console.WriteLine(e.Message);
+            return ($"\nWrong answer - Punctuation: {punctuation}");
         }
-        finally
+    }
+
+    public static char RightFormatOption ()
+    {
+        bool correct = false;
+        char option =' ';
+
+        do
         {
-            MsgNextScreen("Press any key to return to the menu...");
-        }
+            try
+            {
+                string valor = Console.ReadLine();
+                if (valor.Length != 1)
+                {
+                    Console.WriteLine("Please, enter just one character...");
+                }
+                else
+                {
+                    option = Convert.ToChar(valor);
+                    if (option >= 'a' && option <= 'd') correct = true;
+                    else Console.WriteLine("Please, choose one of the options above...");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        } while (!correct);       
+
+        return option;
+    }
+
+    public static void NextQuestion()
+    {
+        Console.WriteLine("\nPress any key for the next question!");
+        Console.ReadKey();
+        Console.Clear();
     }
 
     public static void Cinema()
