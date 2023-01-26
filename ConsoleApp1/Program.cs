@@ -15,10 +15,10 @@
                 case ConsoleKey.NumPad1:
                     MusicCuriosities();
                     break;
-                //case ConsoleKey.D2:
-                //case ConsoleKey.NumPad2:
-                //    DadJokes();
-                //    break;
+                case ConsoleKey.D2:
+                case ConsoleKey.NumPad2:
+                    DadJokes();
+                    break;
                 //case ConsoleKey.D3:
                 //case ConsoleKey.NumPad3:
                 //    Science();
@@ -47,7 +47,7 @@
                 //case ConsoleKey.NumPad9:
                 //    Geography();
                 //    break;
-                 case ConsoleKey.D0:
+                case ConsoleKey.D0:
                 case ConsoleKey.NumPad0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
                     break;
@@ -247,6 +247,135 @@
         Console.WriteLine("C - Bruce Dickinson from Iron Maiden");
         Console.WriteLine("D - Dave Mustaine from Megadeth");
         if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static void DadJokes()
+    {
+        Console.Clear();
+        int count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0;
+        double total;
+        count1 = DadQuestion1();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count2 = DadQuestion2();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count3 = DadQuestion3();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count4 = DadQuestion4();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count5 = DadQuestion5();
+        total = count1 + count2 + count3 + count4 + count5;
+        Console.WriteLine("You've got {0} out of 5 questions right", total);
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT MAIN MENU");
+
+    }
+    public static int DadQuestion1()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("Whath's brown and sticky?");
+        Console.WriteLine("A - Bread Dough");
+        Console.WriteLine("B - A horse bottom");
+        Console.WriteLine("C - A stick");
+        Console.WriteLine("D - Chewing gum");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int DadQuestion2()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("What did the buffalo say to his son when he left for college?");
+        Console.WriteLine("A - Bye bye my son");
+        Console.WriteLine("B - Bison");
+        Console.WriteLine("C - I'm going to buy tobaco, i'll be back soon");
+        Console.WriteLine("D - Save the cheerleader, save the world!");
+        if (ValidAnswer() == 2)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int DadQuestion3()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("Who is the fastest brother of Bruce Lee?");
+        Console.WriteLine("A - Patient-Lee");
+        Console.WriteLine("B - Honest-lee");
+        Console.WriteLine("C - Suden-Lee");
+        Console.WriteLine("D - Broco-Lee");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int DadQuestion4()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("How do you know when a joke is a 'dad joke'?");
+        Console.WriteLine("A - It's apparent");
+        Console.WriteLine("B - It's bad");
+        Console.WriteLine("C - It's a pun");
+        Console.WriteLine("D - It's dumb");
+        if (ValidAnswer() == 1)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int DadQuestion5()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("What kind of bees produces milk?");
+        Console.WriteLine("A - Cow bees");
+        Console.WriteLine("B - Nicolas Cage, NOT THE BEES!!!");
+        Console.WriteLine("C - Moo bees");
+        Console.WriteLine("D - Boo bees");
+        if (ValidAnswer() == 4)
         {
             Console.WriteLine("YEP");
             count = 1;
