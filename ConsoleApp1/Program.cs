@@ -89,36 +89,239 @@
     //Jaume
     public static void History()
     {
-        char rightAnswer = 'a';
-        int punctuation = 0;
+        int sum = 0;
+        char rightAnswer = 'd';
 
-        Console.Write("Question....." +
-        "\na) Option 1 " +
-        "\nb) Option 2 " +
-        "\nc) Option 3 " +
-        "\nd) Option4" +
+        Console.Write("What was the triggering cause of World War I?" +
+        "\n\na) the Night of the Broken Glass in 1938" +
+        "\nb) The rise to power of Kemal Atatürk in Turkey in 1920" +
+        "\nc) The Italian invasion of Ethiopia in 1935" +
+        "\nd) The assassination of Archduke Franz Ferdinand of Austria in 1914" +
         "" +
         "\n\nYour answer → ");
 
-        Console.WriteLine($"{CorrectOrNot(rightAnswer,punctuation)}"); 
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
 
         NextQuestion();
 
-        MsgNextScreen("Press any key to return to the menu...");
+        rightAnswer = 'c';
         
+        Console.Write("According to the legend, who founded Rome?" +
+        "\n\na) Achilles and Odysseus" +
+        "\nb) Alexander the Great" +
+        "\nc) Romulus and Remus" +
+        "\nd) Athena and Kratos" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)}");
+
+        NextQuestion();
+
+        rightAnswer = 'a';
+
+        Console.Write("The Fall of the Berlin Wall took place in..." +
+        "\n\na) 1989 " +
+        "\nb) 1977 " +
+        "\nc) 1994 " +
+        "\nd) 1966" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'b';
+
+        Console.Write("Who is the most famous inquisitor of the Spanish inquisition?" +
+        "\n\na) Luis de Aliaga" +
+        "\nb) Tomás de Torquemada" +
+        "\nc) Adriano de Utrecht" +
+        "\nd) Gaspar de Quiroga" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'c';
+
+        Console.Write("What was the most famous nickname of Louis XVI (France - XVIII century)?" +
+        "\n\na) The Bewitched" +
+        "\nb) The Untouchable" +
+        "\nc) The Sun King" +
+        "\nd) The Mad King" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        MsgNextScreen("\nPress any key to return to the menu...");  
     }
-    public static string CorrectOrNot(char rightAnswer, int punctuation)
+
+    public static void Cinema()
+    {
+        int sum = 0;
+        char rightAnswer = 'b';
+
+        Console.Write("Who said 'Look to my coming on the first light of the fifth day, at dawn look to the east'?" +
+        "\n\na) Aragorn" +
+        "\nb) Gandalf the White" +
+        "\nc) Saruman" +
+        "\nd) Gandalf the Grey" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'd';
+
+        Console.Write("Which one of these movies doesn't belong to Tarantino as a Director?" +
+        "\n\na) Death Proof" +
+        "\nb) From Dusk Till Dawn" +
+        "\nc) Jackie Brown" +
+        "\nd) Natural Born Killers" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'd';
+
+        Console.Write("Which film has won the most Oscars in history?" +
+        "\n\na) Lord Of the Rings: The Return of the King" +
+        "\nb) Titanic" +
+        "\nc) Ben Hur" +
+        "\nd) All are correct" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'a';
+
+        Console.Write("what year was the premiere of the movie 'Nightmare before christmas'?" +
+        "\n\na) 1993" +
+        "\nb) 1984" +
+        "\nc) 1975" +
+        "\nd) 2000" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'c';
+
+        Console.Write("What is the iconic car brand from the movie 'Back to the Future?" +
+        "\n\na) Chevrolet" +
+        "\nb) Pontiac" +
+        "\nc) Delorean" +
+        "\nd) Dodge" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        MsgNextScreen("\nPress any key to return to the menu...");
+    }
+
+    public static void Geography()
+    {
+        int sum = 0;
+        char rightAnswer = 'a';
+
+        Console.Write("Which is the largest country in the world?" +
+        "\n\na) Russia" +
+        "\nb) Brazil" +
+        "\nc) Canada" +
+        "\nd) China" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'a';
+
+        Console.Write("When is the best time to see the northern lights??" +
+        "\n\na) From September to April" +
+        "\nb) From December to March" +
+        "\nc) From August to November" +
+        "\nd) Just in February" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'b';
+
+        Console.Write("which is the highest mountain in Spain?" +
+        "\n\na) Maladeta" +
+        "\nb) Teide" +
+        "\nc) Aneto" +
+        "\nd) La Alcazaba" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'd';
+
+        Console.Write("Which city once had the name 'Leningrad'?" +
+        "\n\na) Volgograd" +
+        "\nb) Moscow" +
+        "\nc) Krasnodar" +
+        "\nd) St.Petersburg" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        NextQuestion();
+
+        rightAnswer = 'b';
+
+        Console.Write("Which European river flows through 10 different countries?" +
+        "\n\na) Rin river" +
+        "\nb) Danube river" +
+        "\nc) Volga river" +
+        "\nd) Sena river" +
+        "" +
+        "\n\nYour answer → ");
+
+        Console.WriteLine($"Punctuation: {sum += Punctuation(rightAnswer)} points ");
+
+        MsgNextScreen("\nPress any key to return to the menu...");
+    }
+
+
+
+    public static int Punctuation(char rightAnswer)
     {
         char option=RightFormatOption();
 
         if (option == rightAnswer)
         {
-            punctuation++;
-            return ($"\nRight answer! - Punctuation: {punctuation}");
+            return 1;
         }
         else
         {
-            return ($"\nWrong answer - Punctuation: {punctuation}");
+            return 0;
         }
     }
 
@@ -158,17 +361,6 @@
         Console.ReadKey();
         Console.Clear();
     }
-
-    public static void Cinema()
-    {
-
-    }
-
-    public static void Geography()
-    {
-
-    }
-
 
 
 
