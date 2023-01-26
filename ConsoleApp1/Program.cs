@@ -443,11 +443,43 @@
         {
             try
             {
-                Console.WriteLine("QÜESTION 1?");
-                Console.WriteLine("\t A - bla bla");
-                Console.WriteLine("\t B - bla bla");
-                Console.WriteLine("\t C - bla bla");
-                Console.WriteLine("\t D - bla bla");
+                Console.WriteLine("When was the first astronomical photograph of the Moon taken by chemistry professor William Draper?");
+                Console.WriteLine("\t A - 1780");
+                Console.WriteLine("\t B - 1840");
+                Console.WriteLine("\t C - 1880");
+                Console.WriteLine("\t D - 1790");
+                resposta = Console.ReadLine();
+                switch (resposta)
+                {
+                    case "B":
+                        Console.WriteLine("Correct");
+                        puntuation++;
+                        break;
+                    case "b":
+                        Console.WriteLine("Correct");
+                        puntuation++;
+                        break;
+                    default:
+                        Console.WriteLine("Incorrect");
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                MsgNextScreen("PRES A KEY TO GO TO THE NEXT QÜESTION -->");
+            }
+            try
+            {
+                Console.Clear();
+                Console.WriteLine("How many confirmed moons does Saturn currently have?");
+                Console.WriteLine("\t A - 200");
+                Console.WriteLine("\t B - 83");
+                Console.WriteLine("\t C - 51");
+                Console.WriteLine("\t D - 132");
                 resposta = Console.ReadLine();
                 switch (resposta)
                 {
@@ -475,11 +507,11 @@
             try
             {
                 Console.Clear();
-                Console.WriteLine("QÜESTION 2?");
-                Console.WriteLine("\t A - bla bla");
-                Console.WriteLine("\t B - bla bla");
-                Console.WriteLine("\t C - bla bla");
-                Console.WriteLine("\t D - bla bla");
+                Console.WriteLine("How many degrees does the Sun make?");
+                Console.WriteLine("\t A - 6248 ºC");
+                Console.WriteLine("\t B - 7281 ºC");
+                Console.WriteLine("\t C - 5505 ºC");
+                Console.WriteLine("\t D - 8467 ºC");
                 resposta = Console.ReadLine();
                 switch (resposta)
                 {
@@ -507,43 +539,11 @@
             try
             {
                 Console.Clear();
-                Console.WriteLine("QÜESTION 3?");
-                Console.WriteLine("\t A - bla bla");
-                Console.WriteLine("\t B - bla bla");
-                Console.WriteLine("\t C - bla bla");
-                Console.WriteLine("\t D - bla bla");
-                resposta = Console.ReadLine();
-                switch (resposta)
-                {
-                    case "D":
-                        Console.WriteLine("Correct");
-                        puntuation++;
-                        break;
-                    case "d":
-                        Console.WriteLine("Correct");
-                        puntuation++;
-                        break;
-                    default:
-                        Console.WriteLine("Incorrect");
-                        break;
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                MsgNextScreen("PRES A KEY TO GO TO THE NEXT QÜESTION -->");
-            }
-            try
-            {
-                Console.Clear();
-                Console.WriteLine("QÜESTION 4?");
-                Console.WriteLine("\t A - bla bla");
-                Console.WriteLine("\t B - bla bla");
-                Console.WriteLine("\t C - bla bla");
-                Console.WriteLine("\t D - bla bla");
+                Console.WriteLine("In what position is Neptune in the Solar System??");
+                Console.WriteLine("\t A - 8");
+                Console.WriteLine("\t B - 7");
+                Console.WriteLine("\t C - 9");
+                Console.WriteLine("\t D - 6");
                 resposta = Console.ReadLine();
                 switch (resposta)
                 {
@@ -571,19 +571,19 @@
             try
             {
                 Console.Clear();
-                Console.WriteLine("QÜESTION 5?");
-                Console.WriteLine("\t A - bla bla");
-                Console.WriteLine("\t B - bla bla");
-                Console.WriteLine("\t C - bla bla");
-                Console.WriteLine("\t D - bla bla");
+                Console.WriteLine("How long does it take for the green comet to return to our Solar System?");
+                Console.WriteLine("\t A - 80.000 years");
+                Console.WriteLine("\t B - 15.000 years");
+                Console.WriteLine("\t C - 100.000 years");
+                Console.WriteLine("\t D - 50.000 years");
                 resposta = Console.ReadLine();
                 switch (resposta)
                 {
-                    case "B":
+                    case "D":
                         Console.WriteLine("Correct");
                         puntuation++;
                         break;
-                    case "b":
+                    case "d":
                         Console.WriteLine("Correct");
                         puntuation++;
                         break;
