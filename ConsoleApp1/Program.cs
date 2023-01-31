@@ -19,10 +19,10 @@
                 case ConsoleKey.NumPad2:
                     DadJokes();
                     break;
-                //case ConsoleKey.D3:
-                //case ConsoleKey.NumPad3:
-                //    Science();
-                //    break;
+                case ConsoleKey.D3:
+                case ConsoleKey.NumPad3:
+                    Science();
+                    break;
                 //case ConsoleKey.D4:
                 //case ConsoleKey.NumPad4:
                 //    DrivingSchool();
@@ -375,6 +375,135 @@
         Console.WriteLine("B - Nicolas Cage, NOT THE BEES!!!");
         Console.WriteLine("C - Moo bees");
         Console.WriteLine("D - Boo bees");
+        if (ValidAnswer() == 4)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static void Science()
+    {
+        Console.Clear();
+        int count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0;
+        double total;
+        count1 = ScienceQuestion1();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count2 = ScienceQuestion2();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count3 = ScienceQuestion3();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count4 = ScienceQuestion4();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count5 = ScienceQuestion5();
+        total = count1 + count2 + count3 + count4 + count5;
+        Console.WriteLine("You've got {0} out of 5 questions right", total);
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT MAIN MENU");
+
+    }
+    public static int ScienceQuestion1()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The hardest substance available on earth is");
+        Console.WriteLine("A - Gold");
+        Console.WriteLine("B - Iron");
+        Console.WriteLine("C - Diamond");
+        Console.WriteLine("D - Platinum");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int ScienceQuestion2()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
+        Console.WriteLine("A - Argon");
+        Console.WriteLine("B - Helium");
+        Console.WriteLine("C - Krypton");
+        Console.WriteLine("D - Xenon");
+        if (ValidAnswer() == 2)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int ScienceQuestion3()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The average salinity of sea water is");
+        Console.WriteLine("A - 2.5%");
+        Console.WriteLine("B - 3%");
+        Console.WriteLine("C - 3.5%");
+        Console.WriteLine("D - 4%");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int ScienceQuestion4()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The audiable range of sound for an average adult is ______");
+        Console.WriteLine("A - 20 Hz - 20 KHz");
+        Console.WriteLine("B - 20 Hz - 50 KHz");
+        Console.WriteLine("C - 50 Hz - 20 KHz");
+        Console.WriteLine("D - 50 Hz - 50 KHz");
+        if (ValidAnswer() == 1)
+        {
+            Console.WriteLine("YEP");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("NOPE");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int ScienceQuestion5()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("Who is known as the father of Physics?");
+        Console.WriteLine("A - Albert Einsteinb");
+        Console.WriteLine("B - Johannes kepler");
+        Console.WriteLine("C - Isaac Newton");
+        Console.WriteLine("D - Galileo Galilei");
         if (ValidAnswer() == 4)
         {
             Console.WriteLine("YEP");
