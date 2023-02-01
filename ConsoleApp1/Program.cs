@@ -23,30 +23,30 @@
                 case ConsoleKey.NumPad3:
                     Science();
                     break;
-                //case ConsoleKey.D4:
-                //case ConsoleKey.NumPad4:
-                //    DrivingSchool();
-                //    break;
-                //case ConsoleKey.D5:
-                //case ConsoleKey.NumPad5:
-                //    Riddles();
-                //    break;
-                //case ConsoleKey.D6:
-                //case ConsoleKey.NumPad6:
-                //    Astronomy();
-                //    break;
-                //case ConsoleKey.D7:
-                //case ConsoleKey.NumPad7:
-                //    History();
-                //    break;
-                //case ConsoleKey.D8:
-                //case ConsoleKey.NumPad8:
-                //    Cinema();
-                //    break;
-                //case ConsoleKey.D9:
-                //case ConsoleKey.NumPad9:
-                //    Geography();
-                //    break;
+                case ConsoleKey.D4:
+                case ConsoleKey.NumPad4:
+                    DrivingSchool();
+                    break;
+                case ConsoleKey.D5:
+                case ConsoleKey.NumPad5:
+                    Riddles();
+                    break;
+                case ConsoleKey.D6:
+                case ConsoleKey.NumPad6:
+                    Astronomy();
+                    break;
+                case ConsoleKey.D7:
+                case ConsoleKey.NumPad7:
+                    History();
+                    break;
+                case ConsoleKey.D8:
+                case ConsoleKey.NumPad8:
+                    Cinema();
+                    break;
+                case ConsoleKey.D9:
+                case ConsoleKey.NumPad9:
+                    Geography();
+                    break;
                 case ConsoleKey.D0:
                 case ConsoleKey.NumPad0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
@@ -55,7 +55,7 @@
                     MsgNextScreen("Error. Prem una tecla per tornar al menú...");
                     break;
             }
-        } while (tecla.Key != ConsoleKey.D0);
+        } while (!(tecla.Key == ConsoleKey.D0 || tecla.Key == ConsoleKey.NumPad0));
     }
 
     public static void ShowOptions()
@@ -160,12 +160,12 @@
             Console.WriteLine("D - THEY CHECKED DIFFERENT COMBINATIONS OF NAMES");
             if (ValidAnswer() == 1)
             {
-                Console.WriteLine("YEP");
+                Console.WriteLine("CORRECT!");
                 count = 1;
             }
             else
             {
-                Console.WriteLine("NOPE");
+                Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → A");
                 count=0;
             }
             return count;
@@ -182,12 +182,12 @@
         Console.WriteLine("D - Aerosmith");
         if (ValidAnswer() == 4)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → D");
             count = 0;
         }
         return count;
@@ -204,12 +204,12 @@
         Console.WriteLine("D - Bon Jovi");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -226,12 +226,12 @@
         Console.WriteLine("D - Myles Kennedy");
         if (ValidAnswer() == 1)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → A");
             count = 0;
         }
         return count;
@@ -248,12 +248,12 @@
         Console.WriteLine("D - Dave Mustaine from Megadeth");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -289,12 +289,12 @@
         Console.WriteLine("D - Chewing gum");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -311,12 +311,12 @@
         Console.WriteLine("D - Save the cheerleader, save the world!");
         if (ValidAnswer() == 2)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → B");
             count = 0;
         }
         return count;
@@ -333,12 +333,12 @@
         Console.WriteLine("D - Broco-Lee");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -355,12 +355,12 @@
         Console.WriteLine("D - It's dumb");
         if (ValidAnswer() == 1)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → A");
             count = 0;
         }
         return count;
@@ -377,12 +377,12 @@
         Console.WriteLine("D - Boo bees");
         if (ValidAnswer() == 4)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → D");
             count = 0;
         }
         return count;
@@ -418,12 +418,12 @@
         Console.WriteLine("D - Platinum");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -440,12 +440,12 @@
         Console.WriteLine("D - Xenon");
         if (ValidAnswer() == 2)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → B");
             count = 0;
         }
         return count;
@@ -462,12 +462,12 @@
         Console.WriteLine("D - 4%");
         if (ValidAnswer() == 3)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
             count = 0;
         }
         return count;
@@ -484,12 +484,12 @@
         Console.WriteLine("D - 50 Hz - 50 KHz");
         if (ValidAnswer() == 1)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → A");
             count = 0;
         }
         return count;
@@ -506,12 +506,12 @@
         Console.WriteLine("D - Galileo Galilei");
         if (ValidAnswer() == 4)
         {
-            Console.WriteLine("YEP");
+            Console.WriteLine("CORRECT!");
             count = 1;
         }
         else
         {
-            Console.WriteLine("NOPE");
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → D");
             count = 0;
         }
         return count;
