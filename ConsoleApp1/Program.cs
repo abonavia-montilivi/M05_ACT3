@@ -11,30 +11,30 @@
             Console.Clear();
             switch (tecla.Key)
             {
-                //case ConsoleKey.D1:
-                //case ConsoleKey.NumPad1:
-                //    MusicCuriosities();
-                //    break;
-                //case ConsoleKey.D2:
-                //case ConsoleKey.NumPad2:
-                //    DadJokes();
-                //    break;
-                //case ConsoleKey.D3:
-                //case ConsoleKey.NumPad3:
-                //    Science();
-                //    break;
-                //case ConsoleKey.D4:
-                //case ConsoleKey.NumPad4:
-                //    DrivingSchool();
-                //    break;
-                //case ConsoleKey.D5:
-                //case ConsoleKey.NumPad5:
-                //    Riddles();
-                //    break;
-                //case ConsoleKey.D6:
-                //case ConsoleKey.NumPad6:
-                //    Astronomy();
-                //    break;
+                case ConsoleKey.D1:
+                case ConsoleKey.NumPad1:
+                    MusicCuriosities();
+                    break;
+                case ConsoleKey.D2:
+                case ConsoleKey.NumPad2:
+                    DadJokes();
+                    break;
+                case ConsoleKey.D3:
+                case ConsoleKey.NumPad3:
+                    Science();
+                    break;
+                case ConsoleKey.D4:
+                case ConsoleKey.NumPad4:
+                    DrivingSchool();
+                    break;
+                case ConsoleKey.D5:
+                case ConsoleKey.NumPad5:
+                    Riddles();
+                    break;
+                case ConsoleKey.D6:
+                case ConsoleKey.NumPad6:
+                    Astronomy();
+                    break;
                 case ConsoleKey.D7:
                 case ConsoleKey.NumPad7:
                     History();
@@ -309,8 +309,6 @@
         MsgNextScreen("\nPress any key to return to the menu...");
     }
 
-
-
     public static int Punctuation(char rightAnswer)
     {
         char option=RightFormatOption();
@@ -361,8 +359,4 @@
         Console.ReadKey();
         Console.Clear();
     }
-
-
-
-
 }
