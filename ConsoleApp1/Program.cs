@@ -388,6 +388,25 @@
         return count;
 
     }
+    public static void Science()
+    {
+        Console.Clear();
+        int count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0;
+        double total;
+        count1 = ScienceQuestion1();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count2 = ScienceQuestion2();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count3 = ScienceQuestion3();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count4 = ScienceQuestion4();
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT QUESTION");
+        count5 = ScienceQuestion5();
+        total = count1 + count2 + count3 + count4 + count5;
+        Console.WriteLine("You've got {0} out of 5 questions right", total);
+        MsgNextScreen("PRESS A KEY TO GO TO THE NEXT MAIN MENU");
+
+    }
     public static int ScienceQuestion1()
     {
         Console.Clear();
