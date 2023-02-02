@@ -387,6 +387,117 @@
         }
         return count;
 
+    }
+    public static int ScienceQuestion1()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The hardest substance available on earth is");
+        Console.WriteLine("A - Gold");
+        Console.WriteLine("B - Iron");
+        Console.WriteLine("C - Diamond");
+        Console.WriteLine("D - Platinum");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("CORRECT!");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int ScienceQuestion2()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
+        Console.WriteLine("A - Argon");
+        Console.WriteLine("B - Helium");
+        Console.WriteLine("C - Krypton");
+        Console.WriteLine("D - Xenon");
+        if (ValidAnswer() == 2)
+        {
+            Console.WriteLine("CORRECT!");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → B");
+            count = 0;
+        }
+        return count;
+
+    }
+    public static int ScienceQuestion3()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The average salinity of sea water is");
+        Console.WriteLine("A - 2.5%");
+        Console.WriteLine("B - 3%");
+        Console.WriteLine("C - 3.5%");
+        Console.WriteLine("D - 4%");
+        if (ValidAnswer() == 3)
+        {
+            Console.WriteLine("CORRECT!");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → C");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int ScienceQuestion4()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("The audiable range of sound for an average adult is ______");
+        Console.WriteLine("A - 20 Hz - 20 KHz");
+        Console.WriteLine("B - 20 Hz - 50 KHz");
+        Console.WriteLine("C - 50 Hz - 20 KHz");
+        Console.WriteLine("D - 50 Hz - 50 KHz");
+        if (ValidAnswer() == 1)
+        {
+            Console.WriteLine("CORRECT!");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → A");
+            count = 0;
+        }
+        return count;
+        ;
+    }
+    public static int ScienceQuestion5()
+    {
+        Console.Clear();
+        int count = 0;
+        Console.WriteLine("Who is known as the father of Physics?");
+        Console.WriteLine("A - Albert Einsteinb");
+        Console.WriteLine("B - Johannes kepler");
+        Console.WriteLine("C - Isaac Newton");
+        Console.WriteLine("D - Galileo Galilei");
+        if (ValidAnswer() == 4)
+        {
+            Console.WriteLine("CORRECT!");
+            count = 1;
+        }
+        else
+        {
+            Console.WriteLine("SORRY BUT THE RIGHT QUESTION WAS THE LETTER → D");
+            count = 0;
+        }
+        return count;
+
+    }
     //Eloy
 
 
