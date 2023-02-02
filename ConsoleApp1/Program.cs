@@ -11,7 +11,7 @@
             Console.Clear();
             switch (tecla.Key)
             {
-                /*case ConsoleKey.D1:
+                case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
                     MusicCuriosities();
                     break;
@@ -22,7 +22,7 @@
                 case ConsoleKey.D3:
                 case ConsoleKey.NumPad3:
                     Science();
-                    break;*/
+                    break;
                 case ConsoleKey.D4:
                 case ConsoleKey.NumPad4:
                     DrivingSchool();
@@ -35,7 +35,7 @@
                 case ConsoleKey.NumPad6:
                     Astronomy();
                     break;
-                /*case ConsoleKey.D7:
+                case ConsoleKey.D7:
                 case ConsoleKey.NumPad7:
                     History();
                     break;
@@ -46,7 +46,7 @@
                 case ConsoleKey.D9:
                 case ConsoleKey.NumPad9:
                     Geography();
-                    break;*/
+                    break;
                  case ConsoleKey.D0:
                 case ConsoleKey.NumPad0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
